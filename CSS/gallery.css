@@ -1,0 +1,129 @@
+#images-iaf{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeffee;
+    padding: 20px;
+    gap: 10px;
+    animation: onLoad 3s;
+}
+#images-iaf .image-slider{
+    width: 100%;
+    border-radius: 10px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.5);
+}
+#images-iaf .image-slider .sol1 img{
+    filter: brightness(120%);
+}
+#images-iaf .image-slider .sol2 img{
+    transform: scaleX(-1);
+    float: right;
+    filter: brightness(120%);
+}
+#images-iaf .image-slider .sol1 img, #images-iaf .image-slider .sol2 img{
+    width: 70%;
+    height: 500px;
+    border-radius: 10px;
+    border-bottom: 10px solid black;
+    border-right: 10px solid rgb(73, 73, 73);
+}
+#images-iaf .image-slider #img-sli, #images-iaf .image-slider img{
+    width: 70%;
+    height: 500px;
+    border-radius: 10px;
+}
+
+#images-iaf .army-images, #images-iaf .navy-images, #images-iaf .air-force-images, #images-iaf .combination-images{
+    width: 100%;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+#images-iaf .army-images h2, #images-iaf .navy-images h2, #images-iaf .air-force-images h2, #images-iaf .combination-images h2{
+    text-align: center;
+    font-size: 4rem;
+    color: green;
+}
+#images-iaf .army-images .image-card1A, #images-iaf .navy-images .image-card2N, #images-iaf .air-force-images .image-card3AF, #images-iaf .combination-images .image-card4C{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+    padding: 10px;
+}
+#images-iaf .army-images .image-card1A div img, #images-iaf .navy-images .image-card2N div img, #images-iaf .air-force-images .image-card3AF div img, #images-iaf .combination-images .image-card4C div img{
+    width: 100%;
+    box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.5);
+}
+
+#images-iaf .army-images .image-card1A div img:hover, #images-iaf .navy-images .image-card2N div img:hover, #images-iaf .air-force-images .image-card3AF div img:hover, #images-iaf .combination-images .image-card4C div img:hover{
+    opacity: 0.5;
+}
+.menu-icon{
+    background-color: aliceblue;
+    z-index: 10;
+}
+
+
+/*....Media Queries....*/
+
+@media (max-width: 1225px){
+    #images-iaf .image-slider .sol1, #images-iaf .image-slider .sol2{
+        display: none;
+    }
+    #images-iaf .image-slider img{
+        width: 80%;
+    }
+}
+@media (max-width: 800px){
+    #images-iaf .army-images h2, #images-iaf .navy-images h2, #images-iaf .air-force-images h2, #images-iaf .combination-images h2{
+        text-align: center;
+        font-size: 2.5rem;
+        color: green;
+    }
+    #images-iaf .image-slider img{
+        width: 100%;
+        height: 400px;
+    }
+    #images-iaf .army-images .image-card1A, #images-iaf .navy-images .image-card2N, #images-iaf .air-force-images .image-card3AF, #images-iaf .combination-images .image-card4C{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 800px){
+    #images-iaf .army-images h2, #images-iaf .navy-images h2, #images-iaf .air-force-images h2, #images-iaf .combination-images h2{
+        font-size: 2.5rem;
+    }
+    #images-iaf .image-slider img{
+        width: 100%;
+        height: 400px;
+    }
+}
+@media (max-width: 600px){
+    #images-iaf .army-images h2, #images-iaf .navy-images h2, #images-iaf .air-force-images h2, #images-iaf .combination-images h2{
+        font-size: 2rem;
+    }
+    #images-iaf .image-slider img{
+        width: 100%;
+        height: 300px;
+    }
+    #images-iaf .army-images .image-card1A, #images-iaf .navy-images .image-card2N, #images-iaf .air-force-images .image-card3AF, #images-iaf .combination-images .image-card4C{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 450px){
+    #images-iaf{
+        padding: 10px;
+    }
+    #images-iaf .image-slider img{
+        width: 100%;
+        height: 200px;
+    }
+}

@@ -1,0 +1,197 @@
+#iaf{
+    width: 100%;
+    background-color: rgb(252, 246, 246);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    animation: onLoad 3s;
+}
+#iaf h2{
+    color: rgb(14, 67, 6);
+    font-size: 6rem;
+}
+#iaf .flags{
+    display: flex;
+    gap: 20px;
+}
+#iaf .flags .flag-img1, #iaf .flags .flag-img2{
+    width: 500px;
+    height: 270px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.menu-icon{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    top: 160px;
+    left: 0;
+    text-align: center;
+    border-radius: 0 5px 5px 0;
+}
+.menu-icon i{
+    color: black;
+    margin-top: 5px;
+    font-size: 2.5rem;
+}
+
+.menu-icon .menu-icon-sub{
+    width: 300px;
+    padding: 10px;
+    background-color: rgb(242, 249, 249);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: translateX(-100%);
+    /* display: none; */
+}
+.menu-icon .menu-icon-sub div{
+    height: 30px;
+    background-color: #fff;
+    border-bottom: 2px solid red;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.menu-icon .menu-icon-sub div a{
+    color: blue;
+    font-size: 1.2rem;
+}
+.menu-icon .menu-icon-sub div:hover{
+    background-color: rgb(245, 135, 153);
+}
+.menu-icon:hover .menu-icon-sub{
+    transition: all 0.3s linear;
+    transform: translateX(0%);
+    /* display: block; */
+}
+
+#iaf .about-iaf{
+    width: 100%;
+    margin-top: 20px;
+    background-color: #fbfbfb;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+hr{
+    height: 4px;
+    background-color: red;
+}
+#iaf .about-iaf p{
+    color: black;
+    text-align: justify;
+    font-weight: 600;
+}
+.strong-heading{
+    font-size: 1.4rem;
+    color: blue;
+}
+.strong-history{
+    font-size: 1.6rem;
+    color: red;
+}
+#iaf .about-iaf b{
+    font-size: 1.2rem;
+    color: rgb(245, 124, 4);
+}
+#iaf .about-iaf ul li{
+    color: rgb(240, 26, 69);
+    font-weight: 700;
+} 
+#iaf .about-iaf p a{
+    color: red;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+
+
+/*....Media Queries....*/
+@media (max-width: 1332px){
+    #iaf h2{
+        font-size: 4rem;
+
+    }
+    #iaf .flags .flag-img1, #iaf .flags .flag-img2{
+        width: 300px;
+        height: 200px;
+    }
+}
+@media (max-width: 925px){
+    #iaf h2{
+        font-size: 3rem;
+
+    }
+    #iaf .flags .flag-img1, #iaf .flags .flag-img2{
+        width: 200px;
+    }
+
+}
+@media (max-width: 730px){
+    #iaf h2{
+        font-size: 2.5rem;
+    }
+    #iaf .flags .flag-img1, #iaf .flags .flag-img2{
+        display: none;
+    }
+
+    .strong-heading{
+        font-size: 1.2rem;
+    }
+    .strong-history{
+        font-size: 1.4rem;
+    }
+    #iaf .about-iaf b{
+        font-size: 1rem;
+    }
+    #iaf .about-iaf p a{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 500px){
+    #iaf h2{
+        font-size: 1.8rem;
+    }
+    .strong-heading{
+        font-size: 1.2rem;
+    }
+    .strong-history{
+        font-size: 1.2rem;
+    }
+    #iaf .about-iaf b{
+        font-size: 1rem;
+    }
+    #iaf .about-iaf p a{
+        font-size: 0.8rem;
+    }
+}
+@media (max-width: 330px){
+    #iaf h2{
+        font-size: 1.4rem;
+    }
+    .strong-heading{
+        font-size: 1rem;
+    }
+    .strong-history{
+        font-size: 1rem;
+        text-align: justify;
+    }
+    #iaf .about-iaf b{
+        font-size: 1rem;
+    }
+    #iaf .about-iaf p a{
+        font-size: 0.8rem;
+    }
+}
+

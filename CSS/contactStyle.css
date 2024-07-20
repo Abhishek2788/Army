@@ -1,0 +1,63 @@
+#contact-us{
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(232, 230, 230);
+}
+#contact-us .div{
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.25), 0 8px 30px 0 rgba(56, 55, 55, 0.25);
+    animation: onLoad 1s;
+}
+#contact-us .div h3{
+    font-size: 1.6rem;
+    line-height: 2;
+    color: blue;
+}
+#contact-us .div p{
+    font-size: 1.2rem;
+    color: rgb(12, 12, 11);
+    font-weight: 600;
+    padding-bottom: 10px;
+    text-align: justify;
+}
+#contact-us .div em{
+    color: red;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: justify;
+}
+#contact-us .div em b{
+    color: blue;
+    font-size: 1.4rem;
+}
+#contact-us .div .contact-link{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+#contact-us .div .contact-link a i{
+    font-size: 2rem;
+    color: rgb(247, 41, 158);
+}
+
+/*....Media Queries....*/
+@media (max-width: 650px){
+    #contact-us .div h3{
+        font-size: 1.2rem;
+    }
+    #contact-us .div p{
+        font-size: 1rem;
+    }
+    #contact-us .div em{
+        font-size: 1rem;
+    }
+    #contact-us .div em b{
+        color: blue;
+        font-size: 1.2rem;
+    }
+}
