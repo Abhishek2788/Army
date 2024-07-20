@@ -321,6 +321,12 @@ footer .socialmedia a i{
         color: #fff;
     }
 }
+@media (max-width: 410px){
+    #home-content{
+        background: url("../Assets/Army Images/a3.jpg");
+        background-size: contain;
+    }
+}
 @media (max-width: 362px){
     header h2{
         font-size: 1rem; 

@@ -28,13 +28,14 @@
     filter: brightness(120%);
 }
 #images-iaf .image-slider .sol1 img, #images-iaf .image-slider .sol2 img{
-    width: 70%;
-    height: 500px;
-    border-radius: 10px;
     border-bottom: 10px solid black;
     border-right: 10px solid rgb(73, 73, 73);
 }
+
 #images-iaf .image-slider #img-sli, #images-iaf .image-slider img{
+    border-radius: 10px;
+}
+#images-iaf .image-slider img{
     width: 70%;
     height: 500px;
     border-radius: 10px;
