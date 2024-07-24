@@ -31,11 +31,13 @@
     left: 0;
     text-align: center;
     border-radius: 0 5px 5px 0;
+    z-index: 10;
+    
 }
 .menu-icon i{
     color: black;
     margin-top: 5px;
-    font-size: 2.5rem;
+    font-size: 1.6rem;
 }
 
 .menu-icon .menu-icon-sub{
@@ -44,10 +46,11 @@
     background-color: rgb(242, 249, 249);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transform: translateX(-100%);
-    /* display: none; */
+    overflow-y: scroll;
+    height: 250px;
 }
 .menu-icon .menu-icon-sub div{
-    height: 30px;
+    min-height: 30px;
     background-color: #fff;
     border-bottom: 2px solid red;
     border-radius: 5px;
@@ -59,7 +62,7 @@
 }
 .menu-icon .menu-icon-sub div a{
     color: blue;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 .menu-icon .menu-icon-sub div:hover{
     background-color: rgb(245, 135, 153);
