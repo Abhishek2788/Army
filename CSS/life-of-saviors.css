@@ -1,0 +1,75 @@
+#life-of-saviors{
+    background: linear-gradient(100deg, #91DDCF, #F19ED2);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    /* height: 100vh; */
+}
+.life-of-saviors-middle{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.life-of-saviors-middle #mh{
+    padding-left: 10px;
+    color: blue;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.life-of-saviors-middle .div1 h3{
+    color: blue;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.life-of-saviors-middle .div1{
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 8px 40px 8px rgba(0, 0, 0, 0.26);
+    animation: onLoad 2s;
+}
+.life-of-saviors-middle .div1 p{
+    font-size: 1.6rem;
+    text-align: justify;
+    font-weight: 600;
+    color: #ffa200;
+}
+.life-of-saviors-middle .div1 ul li{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.life-of-saviors-middle .div1 ul li b{
+    color: red;
+    font-size: 1.4rem;
+}
+.life-of-saviors-middle .div1 strong{
+    font-size: 1.4rem;
+    color: green;
+}
+
+/*....Media Queries....*/
+
+@media (max-width: 650px){
+    .life-of-saviors-middle{
+        padding: 20px;
+    }
+    .life-of-saviors-middle #mh{
+        font-size: 2rem;
+    }
+    .life-of-saviors-middle .div1 h3{
+        font-size: 1.8rem;
+    }
+    .life-of-saviors-middle .div1 p{
+        font-size: 1.2rem;
+    }
+    .life-of-saviors-middle .div1 ul li{
+        font-size: 1rem;
+    }
+    .life-of-saviors-middle .div1 ul li b{
+        font-size: 1.2rem;
+    }
+    .life-of-saviors-middle .div1 strong{
+        font-size: 1.2rem;
+    }
+}
